@@ -1,10 +1,12 @@
-import FaixaTrilha from "./FaixaTrilha";
+import FaixaTrilha from "../FaixaTrilha/FaixaTrilha"
+import ExameSangue from "./imagens/coleta.jpg"
+import RaioX from "./imagens/raiox.jpg"
+import Ultrassom from "./imagens/ultrassom.jpg"
+import Agendamentos from "./imagens/agendamento.jpg"
 
 function Pacientes(){
     return(
         <section>
-            
-            <FaixaTrilha/>
 
             <div id="interativo">
                 <div className="cima">
@@ -12,7 +14,7 @@ function Pacientes(){
                         EXAMES DE SANGUE
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/coleta.jpg" className="image"/>
+                            <img src={ExameSangue} className="image"/>
                         </button>
                     </div>  
 
@@ -20,7 +22,7 @@ function Pacientes(){
                         RAIO-X
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/raiox.jpg" className="image"/>
+                            <img src={RaioX} className="image"/>
                         </button>
                     </div>
                 </div>
@@ -30,7 +32,7 @@ function Pacientes(){
                         ULTRASSOM
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/ultrassom.jpg" className="image"/>
+                            <img src={Ultrassom} className="image"/>
                         </button>
                     </div>
         
@@ -38,7 +40,7 @@ function Pacientes(){
                         AGENDAMENTOS
                         <br/>
                         <a href="../../../../Agendamentos/index.html"><button className="botao">
-                            <img src="./imagens/agendamento.jpg" className="image"/>
+                            <img src={Agendamentos} className="image"/>
                         </button></a>
                     </div>
                 </div>

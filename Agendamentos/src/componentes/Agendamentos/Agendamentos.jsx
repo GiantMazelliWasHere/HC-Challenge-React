@@ -1,11 +1,11 @@
-import FaixaTrilha from "./FaixaTrilha";
+import FaixaTrilha from "../FaixaTrilha/FaixaTrilha"
+import coleta from "./imagens/coleta.jpg"
+import raioX from "./imagens/raiox.jpg"
+import ultrassom from "./imagens/ultrassom.jpg"
 
 function Agendamentos(){
     return(
         <section>
-
-            <FaixaTrilha/>
-
             <div id="agendamentos">
                 <h3>Escolha seu Exame:</h3>
                 <div className="exames">
@@ -13,21 +13,22 @@ function Agendamentos(){
                         Coleta de sangue
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/coleta.jpg" className="image"/>
+                            <img src={coleta} className="image"/>
+                            
                         </button>
                     </div>
                     <div>
                         Raio-X
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/raiox.jpg" className="image"/>
+                            <img src={raioX} className="image"/>
                         </button>
                     </div>
                     <div>
                         Ultrassom
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/ultrassom.jpg" className="image"/>
+                            <img src={ultrassom} className="image"/>
                         </button>
                     </div>
                 </div>

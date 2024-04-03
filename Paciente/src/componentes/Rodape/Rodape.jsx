@@ -1,9 +1,12 @@
+import FooterDark from "./FooterDark"
+import FooterLight from "./FooterLight"
+
 function Rodape(){
     return(
         <div className="rodape">
 
-            <footer_dark/>
-            <footer_light/>
+            <FooterDark/>
+            <FooterLight/>
         </div>
     )
 }

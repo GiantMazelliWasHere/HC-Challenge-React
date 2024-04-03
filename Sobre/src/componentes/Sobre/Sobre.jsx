@@ -1,11 +1,6 @@
-import FaixaTrilha from "./FaixaTrilha";
-
 function Sobre(){
     return(
         <section>
-            
-            <FaixaTrilha/>
-
             <div id="sobre">
                 <h3>Nosso objetivo:</h3>
                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Temos o compromisso de melhorar a experiência do usuário, além de trazer uma forma fácil, divertida e intuitiva de informar os pacientes sobre determinados exames. Essa aba do site foi feita para explicar e mostrar como pensamos em alcançar nosso objetivo e o que já está sendo feito.  </p>

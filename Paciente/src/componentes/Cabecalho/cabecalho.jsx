@@ -1,5 +1,3 @@
-// import './componentes/js/global.js'
-
 function Cabecalho(){
     return(
         <section>

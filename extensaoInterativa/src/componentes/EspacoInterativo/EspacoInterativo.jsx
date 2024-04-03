@@ -1,9 +1,11 @@
-import FaixaTrilha from "./FaixaTrilha"
+import paciente from "./imagens/paciente.jpg"
+import acompanhante from "./imagens/acompanhante.jpg"
+import voluntario from "./imagens/voluntario.jpg"
+import sobre from "./imagens/sobre.jpg"
 
 function EspacoInterativo(){
     return(
         <section>
-            <FaixaTrilha/>
 
             <div id="interativo">
                 <div className="cima">
@@ -11,7 +13,7 @@ function EspacoInterativo(){
                         PACIENTE
                         <br/>
                         <a href="../Paciente/paciente.html"><button className="botao">
-                            <img src="./imagens/paciente.jpg" className="image"/>
+                            <img src={paciente} className="image"/>
                         </button></a>
                     </div>
     
@@ -19,7 +21,7 @@ function EspacoInterativo(){
                         ACOMPANHANTE
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/acompanhante.jpg" className="image"/>
+                            <img src={acompanhante} className="image"/>
                         </button>
                     </div>
                 </div>
@@ -28,7 +30,7 @@ function EspacoInterativo(){
                         VOLUNTÁRIO
                         <br/>
                         <button className="botao">
-                            <img src="./imagens/voluntario.jpg" className="image"/>
+                            <img src={voluntario} className="image"/>
                         </button>
                     </div>
 
@@ -36,7 +38,7 @@ function EspacoInterativo(){
                         SOBRE NÓS
                         <br/>
                         <a href="../Sobre/sobre.html"><button className="botao">
-                            <img src="./imagens/sobre.jpg" className="image"/>
+                            <img src={sobre} className="image"/>
                         </button></a>
                     </div>
                 </div>

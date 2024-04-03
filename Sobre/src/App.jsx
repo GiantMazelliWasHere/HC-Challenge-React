@@ -1,19 +1,25 @@
+import './Style.css'
 import Cabecalho from './componentes/Cabecalho/cabecalho'
+import FaixaTrilha from './componentes/FaixaTrilha/FaixaTrilha'
 import Menu from './componentes/MenuDeNavegacao/Menu'
 import Rodape from './componentes/Rodape/Rodape'
-import './style.css'
+import Sobre from './componentes/Sobre/Sobre'
 
 function App() {
-
+  
   return (
     <>
-      <body className='home'>
+      <header>
         <Cabecalho/>
         <Menu/>
+        <FaixaTrilha/>
+      </header>
+      <body className='home'>
         <Sobre/>
-        <Rodape/>
-        
       </body>
+      <footer>
+        <Rodape/>
+      </footer>
     </>
   )
 }
